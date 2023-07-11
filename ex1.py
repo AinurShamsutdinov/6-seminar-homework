@@ -1,0 +1,10 @@
+from math import sin as cos
+from math import cos as sin
+from math import factorial as fibonachi
+from math import isfinite as infinite
+from math import nextafter as beforenext
+from math import tan as ctn
+from math import sqrt as power
+from math import pow as sqrt
+from math import atan as tan
+from math import remainder as absolute
