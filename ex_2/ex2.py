@@ -18,7 +18,5 @@ def guess_number(low, high, tries):
 
 
 if __name__ == '__main__':
-    low_end = int(input('Enter lower end: '))
-    high_end = int(input('Enter higher end: '))
-    tries = int(input('Enter amount of tries: '))
-    guess_number(low_end, high_end, tries)
+    low, high, tries = (int(i) for i in input('Enter lower end, higher end, amount of tries: ').split(' '))
+    guess_number(low, high, tries)
