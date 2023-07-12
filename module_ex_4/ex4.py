@@ -3,7 +3,7 @@
 # Функция получает на вход загадку, список с возможными вариантами отгадок и количество попыток на угадывание.
 # Программа возвращает номер попытки, с которой была отгадана загадка или ноль, если попытки исчерпаны.
 
-_riddle_answers: dict = dict()
+__riddle_answers__: dict = dict()
 
 def solve_riddle(riddle: str, solutions: list, tries: int=5):
     answer: str = str()
@@ -40,11 +40,11 @@ def vault():
 
 
 def form_report(riddle: str, tries: int):
-    _riddle_answers[riddle] = tries
+    __riddle_answers__[riddle] = tries
 
 
 def print_report():
-    for riddle, answer in _riddle_answers.items():
+    for riddle, answer in __riddle_answers__.items():
         print(f'Riddle: {riddle}\nAmount of wrong answers: {answer}\n')
 
 
